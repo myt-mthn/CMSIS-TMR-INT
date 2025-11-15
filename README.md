@@ -63,5 +63,36 @@ In embedded systems, generating accurate time delays and periodic events is fund
 - You can modify the interval or logic inside the timer-interrupt callback to experiment.  
 - Use a logic analyzer or oscilloscope to verify accurate timing if needed.
 
-## Code Structure
+Key parts:
+- Timer configuration (clock prescaler, period)  
+- NVIC interrupt enable  
+- ISR (Interrupt Service Routine) toggling LED  
+- Delay logic or flag handling if used  
 
+## Customization
+
+- Change the LED GPIO pin, port or board setup in `main.c`.  
+- Modify the timer period or prescaler to adjust blink rate.  
+- Extend to use multiple timers, or trigger other peripherals inside the ISR.  
+- Add optional callback or scheduler logic for more complex tasks.
+
+## Contributing
+
+Contributions are welcome! If you would like to:
+- Add support for other STM32 series (e.g., STM32F4, STM32L)  
+- Add examples demonstrating deep sleep with timer wake-up  
+- Provide code comments or improved documentation  
+
+Please fork the repo, make your changes, and submit a pull request.
+
+## License
+
+This repository is licensed under the **MIT License** — see the LICENSE file for details.
+
+## Acknowledgements
+
+Thanks to the Cortex-M community and the ARM CMSIS libraries for providing a solid foundation. Also thanks to all open-source embedded systems engineers and docs for teaching fundamentals.
+
+---
+
+*Last updated: [DATE]*  
