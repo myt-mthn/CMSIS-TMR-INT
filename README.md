@@ -95,4 +95,4 @@ Thanks to the Cortex-M community and the ARM CMSIS libraries for providing a sol
 
 ---
 
-*Last updated: [DATE]*  
+*Last updated: [15-11-2025]*  
